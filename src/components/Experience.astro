@@ -1,0 +1,35 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCIE = [
+    {
+        date: "En 2022 -> Jun 2023 ",
+        title: "Consultor SAP ABAP",
+        company: "Accenture",
+        description:
+            "Soporte a aplicativos del cliente, monitoreo en tiempo real de jobs y tareas del sistema. Corrección, mantenimiento y mejora contínua a requerimientos de cliente, así también desarrollo y estimación de tareas.",
+    },
+    {
+        date: "Jul 2021 -> Dic 2021",
+        title: "Mobile Developer",
+        company: "Efisys",
+        description:
+            "Encargado de análisis, estimación y desarrollo de requerimientos de cliente, correcciónes y mejoras a aplicaciones móviles, encargado del despliegue y monitoreo de funcionalidades sobre aplicativos, así también desarrollo de Web Services y manejo de Bases de datos..",
+    },
+    {
+        date: "Feb 2018 -> Jun 2021 ",
+        title: "Frontend Developer",
+        company: "Kondosoft",
+        description:
+            "Parte del equipo de desarrollo, encargado de maquetación de UI y desarrollo de mejoras designadas. Responsable de la optimización del tiempo de respuesta y responsividad de la app Perfiletto.",
+    },
+];
+---
+<ol class="relative mt-16">
+    {
+        EXPERIENCIE.map((experiencie) => (
+            <li class="">
+                <ExperienceItem {...experiencie} />
+            </li>
+        ))
+    }
+</ol>
